@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcc94, #f3d9a4);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s infinite alternate ease-in-out;
+  color: white;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.container {
+  padding: 20px;
+}
+
+.dark-mode-card {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.card {
+  transition: transform 0.3s;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.card:hover {
+  animation: pulse 1.5s infinite;
+}
+
+.card-source {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  background-color: #555;
+  border: 1px solid #555;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+  border: 1px solid #444;
+}
+
+/* Advanced Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.005);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card-source {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
